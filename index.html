@@ -3,23 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
+  <title>The Daily Brief by Nicholas Archer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/" class="site-title">Blog</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-brand">
+        <span class="site-name">The Daily Brief</span>
+        <span class="site-byline">by Nicholas Archer</span>
+      </a>
+      <nav class="site-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/politics.html">Politics</a></li>
+          <li><a href="/markets.html">Markets</a></li>
+          <li><a href="/news.html">News</a></li>
+          <li><a href="/sports.html">Sports</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Welcome</h1>
-    <p>Posts coming soon.</p>
+  <main class="container--narrow">
+    <!-- Topic Filter Bar (disabled - uncomment to restore)
+
+    <div class="topic-bar">
+      <a href="/" class="topic-tag active">All</a>
+      <a href="/politics.html" class="topic-tag">Politics</a>
+      <a href="/markets.html" class="topic-tag">Markets</a>
+      <a href="/news.html" class="topic-tag">News</a>
+      <a href="/sports.html" class="topic-tag">Sports</a>
+    </div>
+    -->
+
+    <!-- Featured / Latest Article -->
+    <article class="featured-post">
+      <span class="post-topic">Markets</span>
+      <h1 class="featured-title">
+        <a href="/posts/sample-post.html">What the Fed's Latest Move Means for Your Portfolio</a>
+      </h1>
+      <p class="featured-excerpt">The Federal Reserve held rates steady this week, but the real story is what Chair Powell signaled about the months ahead. Here's what investors should be watching.</p>
+      <div class="post-meta">
+        <span class="post-author">Nicholas Archer</span>
+        <time class="post-date" datetime="2026-03-05">March 5, 2026</time>
+        <span class="post-read-time">6 min read</span>
+      </div>
+    </article>
+
+    <hr class="section-divider">
+
+    <!-- Recent Articles Feed -->
+    <section class="recent-posts">
+      <h2 class="section-heading">Recent</h2>
+
+      <article class="post-item">
+        <span class="post-topic">Politics</span>
+        <h3 class="post-title">
+          <a href="/posts/sample-post.html">The Infrastructure Bill Nobody Is Talking About</a>
+        </h3>
+        <p class="post-excerpt">While the media focuses on the latest controversy, a bipartisan infrastructure package is quietly moving through committee.</p>
+        <div class="post-meta">
+          <time class="post-date" datetime="2026-03-04">March 4, 2026</time>
+          <span class="post-read-time">5 min read</span>
+        </div>
+      </article>
+
+      <article class="post-item">
+        <span class="post-topic">Sports</span>
+        <h3 class="post-title">
+          <a href="/posts/sample-post.html">NFL Free Agency: Winners and Losers So Far</a>
+        </h3>
+        <p class="post-excerpt">The first wave of free agency is in the books. Here's who improved their roster and who overpaid.</p>
+        <div class="post-meta">
+          <time class="post-date" datetime="2026-03-03">March 3, 2026</time>
+          <span class="post-read-time">8 min read</span>
+        </div>
+      </article>
+
+      <article class="post-item">
+        <span class="post-topic">News</span>
+        <h3 class="post-title">
+          <a href="/posts/sample-post.html">What You Need to Know This Week</a>
+        </h3>
+        <p class="post-excerpt">A roundup of the stories that matter: trade negotiations, tech earnings, and the humanitarian crisis that deserves more attention.</p>
+        <div class="post-meta">
+          <time class="post-date" datetime="2026-03-02">March 2, 2026</time>
+          <span class="post-read-time">4 min read</span>
+        </div>
+      </article>
+
+      <article class="post-item">
+        <span class="post-topic">Markets</span>
+        <h3 class="post-title">
+          <a href="/posts/sample-post.html">Why I'm Watching Small Caps Right Now</a>
+        </h3>
+        <p class="post-excerpt">Large-cap tech has dominated the narrative, but the Russell 2000 is flashing signals that deserve your attention.</p>
+        <div class="post-meta">
+          <time class="post-date" datetime="2026-03-01">March 1, 2026</time>
+          <span class="post-read-time">5 min read</span>
+        </div>
+      </article>
+
+      <article class="post-item">
+        <span class="post-topic">Politics</span>
+        <h3 class="post-title">
+          <a href="/posts/sample-post.html">Reading Between the Lines of the State of the Union</a>
+        </h3>
+        <p class="post-excerpt">What was said, what was left out, and what it tells us about the political landscape heading into midterms.</p>
+        <div class="post-meta">
+          <time class="post-date" datetime="2026-02-28">February 28, 2026</time>
+          <span class="post-read-time">7 min read</span>
+        </div>
+      </article>
+
+    </section>
+    <span class="end-mark">\</span>
   </main>
 
-  <footer>
-    <p>&copy; 2026</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Nicholas Archer. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/about.html">About</a>
+        <a href="/rss.xml">RSS</a>
+      </nav>
+    </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
