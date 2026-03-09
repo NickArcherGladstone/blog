@@ -1,0 +1,8 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, .prettierrc.json, .prettierignore, .stylelintrc.json, eslint.config.js, .gitignore",
+    "index.html": "about.html, politics.html, markets.html, news.html, sports.html, food.html, podcast.html, search.html"
+  }
+}

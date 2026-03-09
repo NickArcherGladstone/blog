@@ -85,7 +85,7 @@
   padding: var(--space-xl) 0;
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
   .article-title {
     font-size: 1.625rem;
   }
