@@ -53,7 +53,7 @@ search-index.json       — Search index (must be updated with every new post)
 - Background: warm off-white `#f6f6ef` (Hacker News-inspired)
 - Minimal, writer-focused aesthetic — text is the hero, not the design
 - Backslash `\` end-mark at bottom of pages (Matt Levine-inspired)
-- No border-radius on buttons
+- Filter pills/tags use `border-radius: 100px`
 - CSS variables for all tokens (colors, spacing, typography) in `:root`
 
 ## Shared Elements — Keep in Sync

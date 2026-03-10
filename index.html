@@ -34,28 +34,29 @@
             <li><a href="/food.html">Food</a></li>
             <li><a href="/podcast.html">Podcast</a></li>
             <li><a href="/about.html">About</a></li>
+            <li>
+              <a href="/search.html" class="search-toggle" aria-label="Search">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </a>
+            </li>
           </ul>
-          <a href="/search.html" class="search-toggle" aria-label="Search">
-            <svg viewBox="0 0 24 24">
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-          </a>
         </nav>
       </div>
     </header>
 
     <main class="container--narrow">
-      <!-- Topic Filter Bar (disabled - uncomment to restore)
-
-    <div class="topic-bar">
-      <a href="/" class="topic-tag active">All</a>
-      <a href="/politics.html" class="topic-tag">Politics</a>
-      <a href="/markets.html" class="topic-tag">Markets</a>
-      <a href="/news.html" class="topic-tag">News</a>
-      <a href="/sports.html" class="topic-tag">Sports</a>
-    </div>
-    -->
+      <div class="topic-bar" id="topic-bar">
+        <button type="button" class="topic-tag active" data-category="">All</button>
+        <button type="button" class="topic-tag" data-category="Politics">Politics</button>
+        <button type="button" class="topic-tag" data-category="Markets">Markets</button>
+        <button type="button" class="topic-tag" data-category="News">News</button>
+        <button type="button" class="topic-tag" data-category="Sports">Sports</button>
+        <button type="button" class="topic-tag" data-category="Food">Food</button>
+        <button type="button" class="topic-tag" data-category="Podcast">Podcast</button>
+      </div>
 
       <section class="category-header">
         <h1 class="category-title">Latest</h1>

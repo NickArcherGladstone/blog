@@ -205,6 +205,14 @@ a:hover {
   color: var(--color-text);
 }
 
+.nav-links .search-toggle {
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.nav-links .search-toggle::after {
+  display: none;
+}
+
 @keyframes underline-in {
   from {
     transform: scaleX(0);
@@ -234,6 +242,8 @@ a:hover {
   padding: var(--space-xs) var(--space-md);
   border-radius: 100px;
   border: 1px solid transparent;
+  background: none;
+  cursor: pointer;
   white-space: nowrap;
   transition: all var(--transition-fast);
 }
@@ -516,6 +526,7 @@ a:hover {
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
   padding: var(--space-xs) var(--space-md);
+  border-radius: 100px;
   border: 1px solid transparent;
   background: none;
   cursor: pointer;
@@ -607,6 +618,10 @@ a:hover {
 
   .nav-links a::after {
     display: none;
+  }
+
+  .nav-links .search-toggle {
+    display: flex;
   }
 
   .post-meta {
