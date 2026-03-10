@@ -16,7 +16,14 @@ Website name is TBD ("The Daily Brief" is a placeholder in all files).
 
 ## Content Categories
 
-Politics, Markets, News, Sports, Food, Podcast
+| Category     | Coverage                                                                              | Voice / Approach                                                                                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Politics** | Elections, legislation, policy analysis, geopolitics, wars, bill proposals            | Non-partisan analysis — what matters and why, not the daily noise. Nick breaks down the implications, not the theater.                                                               |
+| **Markets**  | Stock market outlook, sector analysis, economic signals, portfolio strategy           | Data-informed, clear-eyed. Translates Fed moves, earnings, and macro trends into what they actually mean for regular investors.                                                      |
+| **News**     | Current events, weekly roundups, under-covered stories                                | The stories that deserve attention, with context. Fills the gap between breaking-news churn and long-form journalism.                                                                |
+| **Sports**   | Football (NFL), golf, fantasy football analytics, in-season game/player/team analysis | Seasonal — heavy during football season and golf majors. Analytical and opinionated, not box-score recaps.                                                                           |
+| **Food**     | Food industry trends/news, restaurant reviews, recipes                                | Opinionated and first-person. Reviews are honest, not sponsored. Recipes are personally tested and practical. Trend coverage looks at the economics and culture of how America eats. |
+| **Podcast**  | Long-form conversations, deep dives on cross-category topics                          | Extended format for topics that need more room than a written piece allows.                                                                                                          |
 
 ## File Structure
 
@@ -69,15 +76,15 @@ This is a static site with no partials or template system. The following element
 
 ### What's shared:
 
-| Element | Location | When to update all pages |
-|---|---|---|
-| **Nav links** (`<ul class="nav-links">`) | `<header>` | Adding/removing/renaming a nav item or changing any URL |
-| **Search icon** (`<a class="search-toggle">`) | End of `<nav>` | Changing the search page URL or icon |
-| **Site brand** (`<a class="site-brand">`) | `<header>` | Changing the site name or byline |
-| **Footer** (`<footer class="site-footer">`) | Bottom of `<body>` | Changing copyright, footer links, or adding new footer content |
-| **Google Fonts `<link>`** | `<head>` | Changing fonts |
-| **CSS `<link>` tags** | `<head>` | Adding/removing stylesheets |
-| **JS `<script>` tags** | Before `</body>` | Adding/removing scripts (note: `search.js` only loads on `search.html`) |
+| Element                                       | Location           | When to update all pages                                                |
+| --------------------------------------------- | ------------------ | ----------------------------------------------------------------------- |
+| **Nav links** (`<ul class="nav-links">`)      | `<header>`         | Adding/removing/renaming a nav item or changing any URL                 |
+| **Search icon** (`<a class="search-toggle">`) | End of `<nav>`     | Changing the search page URL or icon                                    |
+| **Site brand** (`<a class="site-brand">`)     | `<header>`         | Changing the site name or byline                                        |
+| **Footer** (`<footer class="site-footer">`)   | Bottom of `<body>` | Changing copyright, footer links, or adding new footer content          |
+| **Google Fonts `<link>`**                     | `<head>`           | Changing fonts                                                          |
+| **CSS `<link>` tags**                         | `<head>`           | Adding/removing stylesheets                                             |
+| **JS `<script>` tags**                        | Before `</body>`   | Adding/removing scripts (note: `search.js` only loads on `search.html`) |
 
 ### How to update:
 

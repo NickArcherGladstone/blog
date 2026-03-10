@@ -58,6 +58,23 @@
           </svg>
           <input type="text" id="search-input" name="q" placeholder="Search articles..." autocomplete="off" autofocus />
         </div>
+        <div class="search-filters">
+          <div class="search-categories" id="search-categories">
+            <button type="button" class="search-filter-pill active" data-category="">All</button>
+            <button type="button" class="search-filter-pill" data-category="Politics">Politics</button>
+            <button type="button" class="search-filter-pill" data-category="Markets">Markets</button>
+            <button type="button" class="search-filter-pill" data-category="News">News</button>
+            <button type="button" class="search-filter-pill" data-category="Sports">Sports</button>
+            <button type="button" class="search-filter-pill" data-category="Food">Food</button>
+            <button type="button" class="search-filter-pill" data-category="Podcast">Podcast</button>
+          </div>
+          <select id="search-date-range" class="search-date-select">
+            <option value="">Any time</option>
+            <option value="7">Past week</option>
+            <option value="30">Past month</option>
+            <option value="365">Past year</option>
+          </select>
+        </div>
       </form>
 
       <hr class="section-divider" />
