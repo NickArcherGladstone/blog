@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx prettier --write index.html)",
+      "Bash(npx prettier --write CLAUDE.md js/search.js)",
+      "Bash(npx prettier:*)",
+      "Bash(for f:*)",
+      "Bash(do sed:*)",
+      "Bash(sed -i 's/<svg viewBox=\"\"0 0 24 24\"\">/<svg class=\"\"icon\"\" viewBox=\"\"0 0 24 24\"\">/g' posts/sample-post.html)",
+      "WebFetch(domain:www.thedispatch.com)",
+      "WebFetch(domain:www.bloomberg.com)",
+      "WebFetch(domain:www.drudgereport.com)",
+      "WebFetch(domain:www.thefp.com)",
+      "WebFetch(domain:puck.news)",
+      "WebFetch(domain:politico.com)",
+      "WebFetch(domain:drudgereport.com)",
+      "WebFetch(domain:thefp.com)",
+      "WebFetch(domain:semafor.com)",
+      "WebFetch(domain:web.archive.org)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Nicholas Archer\\OneDrive - Gladstone Masonry and Stoneworks, INC\\Desktop\\Projects\\blog"
+    ]
+  }
+}

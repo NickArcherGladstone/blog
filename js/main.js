@@ -14,10 +14,10 @@ const topicBar = document.getElementById('topic-bar');
 
 if (topicBar) {
   topicBar.addEventListener('click', (e) => {
-    const btn = e.target.closest('.topic-tag');
+    const btn = e.target.closest('.pill');
     if (!btn) return;
 
-    const tags = topicBar.querySelectorAll('.topic-tag');
+    const tags = topicBar.querySelectorAll('.pill');
     tags.forEach((tag) => tag.classList.remove('active'));
     btn.classList.add('active');
 

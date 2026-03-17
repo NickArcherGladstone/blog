@@ -2,14 +2,13 @@
 
 ## Overview
 
-Independent media/commentary site by Nicholas Archer. Pure static HTML/CSS/JS — no framework, no build step. Hosted on Cloudflare Pages.
+Independent media/commentary site by Nicholas Archer. Hosted on Cloudflare Pages.
 
 Website name is TBD ("The Daily Brief" is a placeholder in all files).
 
 ## Tech Stack
 
-- Static HTML, CSS, JS only
-- No frameworks, no build tools, no SSG
+- Static HTML, CSS, JS (open to frameworks and build tools as needed)
 - Fonts: Source Serif 4 (body) + system-ui (headings)
 - Hosting: Cloudflare Pages
 - Linting: ESLint, Stylelint, Prettier (run via `npm run lint` / `npm run fix`)
@@ -36,7 +35,11 @@ sports.html             — Sports category page
 food.html               — Food category page
 podcast.html            — Podcast category page
 about.html              — About page
-search.html             — Search results page
+search.html             — Search fallback (auto-opens overlay)
+privacy.html            — Privacy policy
+404.html                — Custom 404 page (Cloudflare Pages)
+rss.xml                 — RSS feed (update with every new post)
+sitemap.xml             — XML sitemap for SEO (update with every new post)
 posts/                  — Article HTML files
   sample-post.html      — Article page template
 css/
@@ -44,7 +47,7 @@ css/
   article.css           — Article page typography
 js/
   main.js               — Mobile nav toggle
-  search.js             — Client-side search (runs on search.html)
+  search.js             — Search overlay (loaded on all pages)
 search-index.json       — Search index (must be updated with every new post)
 ```
 
@@ -76,15 +79,15 @@ This is a static site with no partials or template system. The following element
 
 ### What's shared:
 
-| Element                                       | Location           | When to update all pages                                                |
-| --------------------------------------------- | ------------------ | ----------------------------------------------------------------------- |
-| **Nav links** (`<ul class="nav-links">`)      | `<header>`         | Adding/removing/renaming a nav item or changing any URL                 |
-| **Search icon** (`<a class="search-toggle">`) | End of `<nav>`     | Changing the search page URL or icon                                    |
-| **Site brand** (`<a class="site-brand">`)     | `<header>`         | Changing the site name or byline                                        |
-| **Footer** (`<footer class="site-footer">`)   | Bottom of `<body>` | Changing copyright, footer links, or adding new footer content          |
-| **Google Fonts `<link>`**                     | `<head>`           | Changing fonts                                                          |
-| **CSS `<link>` tags**                         | `<head>`           | Adding/removing stylesheets                                             |
-| **JS `<script>` tags**                        | Before `</body>`   | Adding/removing scripts (note: `search.js` only loads on `search.html`) |
+| Element                                       | Location           | When to update all pages                                            |
+| --------------------------------------------- | ------------------ | ------------------------------------------------------------------- |
+| **Nav links** (`<ul class="nav-links">`)      | `<header>`         | Adding/removing/renaming a nav item or changing any URL             |
+| **Search icon** (`<a class="search-toggle">`) | End of `<nav>`     | Changing the search page URL or icon                                |
+| **Site brand** (`<a class="site-brand">`)     | `<header>`         | Changing the site name or byline                                    |
+| **Footer** (`<footer class="site-footer">`)   | Bottom of `<body>` | Changing copyright, footer links, or adding new footer content      |
+| **Google Fonts `<link>`**                     | `<head>`           | Changing fonts                                                      |
+| **CSS `<link>` tags**                         | `<head>`           | Adding/removing stylesheets                                         |
+| **JS `<script>` tags**                        | Before `</body>`   | Adding/removing scripts (`main.js` + `search.js` load on all pages) |
 
 ### How to update:
 
@@ -112,6 +115,8 @@ When creating or adding a new article/post to the site, **always**:
 ```
 
 3. Add the post to the homepage feed in `index.html` (and the relevant category page if one exists)
+4. Add an `<item>` entry to `rss.xml` (keep items sorted by date, newest first)
+5. Add a `<url>` entry to `sitemap.xml`
 
 ## Linting
 

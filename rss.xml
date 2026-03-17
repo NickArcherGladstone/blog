@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Daily Brief by Nicholas Archer</title>
+    <link>https://example.com</link>
+    <description>Independent analysis on politics, markets, news, sports, and food by Nicholas Archer.</description>
+    <language>en-us</language>
+    <atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Sat, 08 Mar 2026 12:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>The Best Steakhouse You've Never Heard Of</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=steakhouse</guid>
+      <pubDate>Sun, 08 Mar 2026 12:00:00 GMT</pubDate>
+      <category>Food</category>
+      <description>Tucked away in a strip mall, this family-run spot is serving some of the best dry-aged beef in the region. Here's why it deserves your attention.</description>
+    </item>
+
+    <item>
+      <title>Episode 1: Why Trust in Media Is Broken (And How to Fix It)</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=podcast-ep1</guid>
+      <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+      <category>Podcast</category>
+      <description>In the debut episode, I break down what went wrong with news media and why I think there's a path forward for independent voices.</description>
+    </item>
+
+    <item>
+      <title>What the Fed's Latest Move Means for Your Portfolio</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=fed-move</guid>
+      <pubDate>Thu, 05 Mar 2026 12:00:00 GMT</pubDate>
+      <category>Markets</category>
+      <description>The Federal Reserve held rates steady this week, but the real story is what Chair Powell signaled about the months ahead. Here's what investors should be watching.</description>
+    </item>
+
+    <item>
+      <title>The Infrastructure Bill Nobody Is Talking About</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=infrastructure-bill</guid>
+      <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
+      <category>Politics</category>
+      <description>While the media focuses on the latest controversy, a bipartisan infrastructure package is quietly moving through committee.</description>
+    </item>
+
+    <item>
+      <title>NFL Free Agency: Winners and Losers So Far</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=nfl-free-agency</guid>
+      <pubDate>Tue, 03 Mar 2026 12:00:00 GMT</pubDate>
+      <category>Sports</category>
+      <description>The first wave of free agency is in the books. Here's who improved their roster and who overpaid.</description>
+    </item>
+
+    <item>
+      <title>What You Need to Know This Week</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=weekly-roundup</guid>
+      <pubDate>Mon, 02 Mar 2026 12:00:00 GMT</pubDate>
+      <category>News</category>
+      <description>A roundup of the stories that matter: trade negotiations, tech earnings, and the humanitarian crisis that deserves more attention.</description>
+    </item>
+
+    <item>
+      <title>Episode 2: The Market Signals Everyone Is Ignoring</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=podcast-ep2</guid>
+      <pubDate>Mon, 02 Mar 2026 12:00:00 GMT</pubDate>
+      <category>Podcast</category>
+      <description>A conversation about what the bond market is telling us, why small caps matter, and how to think about risk in 2026.</description>
+    </item>
+
+    <item>
+      <title>Why I'm Watching Small Caps Right Now</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=small-caps</guid>
+      <pubDate>Sun, 01 Mar 2026 12:00:00 GMT</pubDate>
+      <category>Markets</category>
+      <description>Large-cap tech has dominated the narrative, but the Russell 2000 is flashing signals that deserve your attention.</description>
+    </item>
+
+    <item>
+      <title>Why I Started Cooking More at Home (And What I'm Making)</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=cooking-at-home</guid>
+      <pubDate>Sun, 01 Mar 2026 12:00:00 GMT</pubDate>
+      <category>Food</category>
+      <description>A few simple recipes that changed how I think about weeknight dinners. No culinary degree required.</description>
+    </item>
+
+    <item>
+      <title>Reading Between the Lines of the State of the Union</title>
+      <link>https://example.com/posts/sample-post.html</link>
+      <guid>https://example.com/posts/sample-post.html?id=state-of-union</guid>
+      <pubDate>Sat, 28 Feb 2026 12:00:00 GMT</pubDate>
+      <category>Politics</category>
+      <description>What was said, what was left out, and what it tells us about the political landscape heading into midterms.</description>
+    </item>
+
+  </channel>
+</rss>
